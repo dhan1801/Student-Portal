@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Phase3App</string>
+    <string name="logged_in_as">Logged in as: %1$s</string>
+    <string name="email_hint">Email</string>
+    <string name="retrieve_login_info">Retrieve Login Info</string>
+    <string name="login_info_placeholder">Login info will appear here</string>
+    <string name="invalid_user_message">Logged in as: invalid user</string>
+    <string name="student_id_missing">Student ID not received from login.</string>
+    <string name="student_label">Student: </string>
+    <string name="gpa_label">GPA: </string>
+    <string name="credits_label">Credits Earned: </string>
+    <string name="courses_label">Courses:\n</string>
+    <string name="error_prefix">Error: </string>
+    <string name="loading_transcript">Loading transcript</string>
+</resources>

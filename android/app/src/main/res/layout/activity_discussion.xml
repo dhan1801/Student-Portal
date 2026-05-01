@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Discussion Board"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Post list -->
+        <ListView
+            android:id="@+id/listPosts"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp" />
+
+        <Button
+            android:id="@+id/btnLoadPosts"
+            android:text="Refresh Posts"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- New post / reply section -->
+        <TextView
+            android:text="New Post"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtSelectedReply"
+            android:text=""
+            android:textColor="#888888"
+            android:textSize="13sp"
+            android:layout_marginBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editReplyId"
+            android:hint="Reply to post # (leave blank for new post)"
+            android:inputType="number"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editContent"
+            android:hint="Write your message..."
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:gravity="top"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnPost"
+            android:text="Submit Post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- TA / Grader delete panel — hidden for regular students -->
+        <LinearLayout
+            android:id="@+id/deleteSection"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:text="Delete Post (TA / Grader only)"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/editDeleteId"
+                android:hint="Post # to delete"
+                android:inputType="number"
+                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:text="Delete Post"
+                android:backgroundTint="#D32F2F"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
