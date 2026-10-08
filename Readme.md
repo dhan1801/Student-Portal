@@ -69,6 +69,12 @@ This is a course project meant to run on a local machine.
 - The app talks to the API over plain HTTP, and the database uses the XAMPP root account with no password.
 - Browsing is fixed to Spring 2026, and the section capacity of 15 is hard-coded in the API.
 
+## My Contributions (Dhanvika Nakka)
+
+- **Registration checks:** a student cannot register for a course unless they have passed its prerequisite (for example, CS-101 before CS-201), and cannot register for a section they are already registered in, so there are no duplicate enrollments.
+- **Discussion board:** students can read the discussions of the sections they are enrolled in, post new messages and reply to a specific post. Teaching assistants and graders can delete posts, which the server checks before deleting.
+- **Database extensions:** the `account` table used for login, `email` columns on `student` and `instructor`, the `discussion_id` and `reply_id` columns (with a new primary key) that make discussions threaded, and the `registration_deadline` table.
+
 ## Contributors
 
 - [Nicholas Calabro](https://github.com/ncalabro18)
